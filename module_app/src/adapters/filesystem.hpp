@@ -7,5 +7,5 @@
 namespace adapters::fs {
     std::unique_ptr<std::istream> open_file(const std::filesystem::path& path);
 
-    void write_file(const std::string& path, const std::string& contents);
+    void write_file(const std::filesystem::path& path, const std::string& contents);
 }

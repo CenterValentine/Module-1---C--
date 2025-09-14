@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/module_app.dir/src/main.cpp.o CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.o CMakeFiles/module_app.dir/src/core/parser.cpp.o -o module_app
