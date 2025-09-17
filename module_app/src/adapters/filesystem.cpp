@@ -11,8 +11,6 @@ namespace adapters::fs {
 
     std::unique_ptr<std::istream> open_file(const std::filesystem::path& path){
         auto file = std::make_unique<std::ifstream>(path);
-        // exceptions precaution for input/output errors
-        file->exceptions(std::ios::badbit | std::ios::failbit);
 
         // exception for failure to open
         if (!file->is_open()){

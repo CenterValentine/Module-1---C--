@@ -11,11 +11,17 @@ int main(){
     std::string input = "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/inputs/input.txt";
 
     if (std::filesystem::exists(input)) {
-    std::cout << "File exists ✅\n";
+    // std::cout << "File exists\n";
 } else {
-    std::cout << "File does not exist ❌\n";
+    // std::cout << "File does not exist\n";
 }
 
-    // adapters::fs::open_file(input);
+    auto file = adapters::fs::open_file(input);
+    
+    std::string line;
+    while (std::getline(*file, line)){
+std::cout << line << "\n";
+    }
+
 
 }
