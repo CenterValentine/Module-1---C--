@@ -1,11 +1,12 @@
-
-#include "core/parser.hpp"
-#include "adapters/filesystem.hpp"
 #include <iostream>
+#include <filesystem>
+#include <cctype>
+#include "core/analyzer.hpp"
+#include "adapters/filesystem.hpp"
+
 
 
 int main(){
-
 
 // File input path
     std::string input = "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/inputs/input.txt";

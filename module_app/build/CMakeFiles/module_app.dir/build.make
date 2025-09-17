@@ -100,32 +100,32 @@ CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/adapters/filesystem.cpp" -o CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.s
 
-CMakeFiles/module_app.dir/src/core/parser.cpp.o: CMakeFiles/module_app.dir/flags.make
-CMakeFiles/module_app.dir/src/core/parser.cpp.o: /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/parser.cpp
-CMakeFiles/module_app.dir/src/core/parser.cpp.o: CMakeFiles/module_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/module_app.dir/src/core/parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/module_app.dir/src/core/parser.cpp.o -MF CMakeFiles/module_app.dir/src/core/parser.cpp.o.d -o CMakeFiles/module_app.dir/src/core/parser.cpp.o -c "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/parser.cpp"
+CMakeFiles/module_app.dir/src/core/analyzer.cpp.o: CMakeFiles/module_app.dir/flags.make
+CMakeFiles/module_app.dir/src/core/analyzer.cpp.o: /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/analyzer.cpp
+CMakeFiles/module_app.dir/src/core/analyzer.cpp.o: CMakeFiles/module_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/module_app.dir/src/core/analyzer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/module_app.dir/src/core/analyzer.cpp.o -MF CMakeFiles/module_app.dir/src/core/analyzer.cpp.o.d -o CMakeFiles/module_app.dir/src/core/analyzer.cpp.o -c "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/analyzer.cpp"
 
-CMakeFiles/module_app.dir/src/core/parser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/module_app.dir/src/core/parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/parser.cpp" > CMakeFiles/module_app.dir/src/core/parser.cpp.i
+CMakeFiles/module_app.dir/src/core/analyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/module_app.dir/src/core/analyzer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/analyzer.cpp" > CMakeFiles/module_app.dir/src/core/analyzer.cpp.i
 
-CMakeFiles/module_app.dir/src/core/parser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/module_app.dir/src/core/parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/parser.cpp" -o CMakeFiles/module_app.dir/src/core/parser.cpp.s
+CMakeFiles/module_app.dir/src/core/analyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/module_app.dir/src/core/analyzer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/src/core/analyzer.cpp" -o CMakeFiles/module_app.dir/src/core/analyzer.cpp.s
 
 # Object files for target module_app
 module_app_OBJECTS = \
 "CMakeFiles/module_app.dir/src/main.cpp.o" \
 "CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.o" \
-"CMakeFiles/module_app.dir/src/core/parser.cpp.o"
+"CMakeFiles/module_app.dir/src/core/analyzer.cpp.o"
 
 # External object files for target module_app
 module_app_EXTERNAL_OBJECTS =
 
 module_app: CMakeFiles/module_app.dir/src/main.cpp.o
 module_app: CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.o
-module_app: CMakeFiles/module_app.dir/src/core/parser.cpp.o
+module_app: CMakeFiles/module_app.dir/src/core/analyzer.cpp.o
 module_app: CMakeFiles/module_app.dir/build.make
 module_app: CMakeFiles/module_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable module_app"

@@ -45,7 +45,7 @@ WordStats words;
 
 class Analyzer {
 public:
-Report run(std::istream& in);
+Report run(std::istream& in, char delimiter  = '\n');
 
 
 private:
@@ -54,3 +54,5 @@ void analyze_line(std::string_view line, Report& r) noexcept;
 static std::string_view next_token(std::string_view s, std::size_t& i) noexcept;
 
 };
+
+}

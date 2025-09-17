@@ -153,29 +153,29 @@ src/adapters/filesystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/adapters/filesystem.cpp.s
 .PHONY : src/adapters/filesystem.cpp.s
 
-src/core/parser.o: src/core/parser.cpp.o
-.PHONY : src/core/parser.o
+src/core/analyzer.o: src/core/analyzer.cpp.o
+.PHONY : src/core/analyzer.o
 
 # target to build an object file
-src/core/parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/parser.cpp.o
-.PHONY : src/core/parser.cpp.o
+src/core/analyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/analyzer.cpp.o
+.PHONY : src/core/analyzer.cpp.o
 
-src/core/parser.i: src/core/parser.cpp.i
-.PHONY : src/core/parser.i
+src/core/analyzer.i: src/core/analyzer.cpp.i
+.PHONY : src/core/analyzer.i
 
 # target to preprocess a source file
-src/core/parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/parser.cpp.i
-.PHONY : src/core/parser.cpp.i
+src/core/analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/analyzer.cpp.i
+.PHONY : src/core/analyzer.cpp.i
 
-src/core/parser.s: src/core/parser.cpp.s
-.PHONY : src/core/parser.s
+src/core/analyzer.s: src/core/analyzer.cpp.s
+.PHONY : src/core/analyzer.s
 
 # target to generate assembly for a file
-src/core/parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/parser.cpp.s
-.PHONY : src/core/parser.cpp.s
+src/core/analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/analyzer.cpp.s
+.PHONY : src/core/analyzer.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -213,9 +213,9 @@ help:
 	@echo "... src/adapters/filesystem.o"
 	@echo "... src/adapters/filesystem.i"
 	@echo "... src/adapters/filesystem.s"
-	@echo "... src/core/parser.o"
-	@echo "... src/core/parser.i"
-	@echo "... src/core/parser.s"
+	@echo "... src/core/analyzer.o"
+	@echo "... src/core/analyzer.i"
+	@echo "... src/core/analyzer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

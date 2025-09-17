@@ -8,7 +8,6 @@
 
 namespace adapters::fs {
 
-
     std::unique_ptr<std::istream> open_file(const std::filesystem::path& path){
         auto file = std::make_unique<std::ifstream>(path);
 
