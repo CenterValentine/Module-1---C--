@@ -30,14 +30,11 @@ std::vector<int> line_word_counts;
 void analyzerCount(std::string_view line) noexcept;
 };
 
-struct WordCount {
-std::string word;
-std:size_t count = 0};
-
 struct WordStats {
-std:size_t word_count = 0;
-std::vector<WordCount> frequency; // collection of {word, count}
-void addToken(std:string_view token);
+
+std::size_t word_count = 0;
+std::unordered_map<std::string, std::size_t> freq;      // collection of {word, count}
+void addToken(std::string_view token);
 };
 
 struct Report {
@@ -48,12 +45,12 @@ WordStats words;
 
 class Analyzer {
 public:
-Report run(std:istream& in);
+Report run(std::istream& in);
 
 
 private:
-void analyze_line(std:string_view line, Report& r) noexcept;
+void analyze_line(std::string_view line, Report& r) noexcept;
 
-static std::string_view next_token(std::string_view s, std:size_t& i) noexcept;
+static std::string_view next_token(std::string_view s, std::size_t& i) noexcept;
 
 };
