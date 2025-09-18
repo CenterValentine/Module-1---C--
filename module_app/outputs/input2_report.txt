@@ -1,0 +1,41 @@
+== Line Stats ==
+Total lines: 6
+Empty lines: 1
+Max line length: 41
+
+== Word Stats ==
+Total words: 33
+Top words (unsorted dump):
+  be: 1
+  to: 1
+  and: 1
+  here: 1
+  short: 1
+  4: 1
+  three: 1
+  time: 1
+  has: 1
+  two: 1
+  test: 2
+  file: 1
+  1: 1
+  5: 1
+  line: 5
+  hello: 1
+  world: 1
+  counted: 1
+  a: 2
+  words: 3
+  is: 4
+  this: 1
+
+== Character Stats ==
+Total characters: 147
+Letters: 109
+Digits: 3
+Spaces: 28
+Commas: 1
+Periods: 4
+Exclamations: 1
+Question marks: 1
+Other characters: 0

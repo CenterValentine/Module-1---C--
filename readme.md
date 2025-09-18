@@ -1,12 +1,9 @@
 # Overview
 
-This CLI application allows text files to be parsed or tokenized in order to gather text based insights about the text document.  In the world of LLMs, word and language patterns are key and this application takes a basic but important step toward these actions.
 
-{Provide a description of the software that you wrote to demonstrate the C++ language.}
+This CLI application analyzes text files and places the analysis into a .txt or .json file.  The anlysis provides a count of all words as well as line, character, character type and word counts.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+This CLI application was inpired by the world of LLMs where file interpretiation and incorporating such data int LLMS opens doors to productivity.  In the world of LLMs, word and language patterns are key and this application takes a basic but important step toward such potential actions.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
@@ -51,6 +48,7 @@ I had ChatGPT craft C++ flashcards for Obsidian to solidify my understanding of 
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
+
 - Size limitation protection:
 - Line ending interpretation.
 - Error handling:
@@ -63,6 +61,11 @@ I had ChatGPT craft C++ flashcards for Obsidian to solidify my understanding of 
 - file type dilimiters (csv, txt, pdf)
 - bytes/hex mode:
 - UTF vs ASCII reporting
-- Top-k analyzis
+
 - LLM tokenization:
     - Convert text into tokens or vectorize tokens for LLM use.
+- Top-k analyzis
+- **Readability scores** (Flesch–Kincaid, average sentence length).
+- **Entropy / randomness measure** (is it human text or gibberish?).
+- **Keyword density** (ratio of key terms to total words).
+

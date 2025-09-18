@@ -1,12 +1,8 @@
 #include <iostream>
 #include <filesystem>
-#include <cctype>
 #include "core/analyzer.hpp"
 #include "core/report.hpp"
 #include "adapters/filesystem.hpp"
-#include <cstring>
-#include <ostream>
-#include <sstream>
 
 
 int main(){
@@ -22,13 +18,16 @@ int main(){
 // }
 
 std::filesystem::path filePath;
-std::cout << "Welcome to file analyzer I \n";
+std::cout << "Welcome to file analyzer \n";
 std::cout << "Please enter the file you wish to process:\n";
+
+// show available input files.
 for (const auto & entry : std::filesystem::directory_iterator(inputDirectory)){
     std::cout << entry.path() << "\n" << std::endl;
 }
 std::cin >> filePath;
 
+//open the file
 auto file = adapters::fs::open_file(inputDirectory / filePath);
     
 std::cout << "File contents: \n";
@@ -49,15 +48,15 @@ while (true) {
     std::cin >> saveFile;
     if (saveFile == "json" || saveFile == "JSON") {
         std::filesystem::create_directories(outputDirectory);
-        // Use input file stem to name the report
-        auto outPath = outputDirectory / (filePath.stem().string() + "_report.txt");
+        // stem modifies the report name.
+        auto outPath = outputDirectory / (filePath.stem().string() + "_report.json");
         adapters::fs::write_file(outPath, core::to_json(report));
         std::cout << "Saved report to: " << outPath << "\n";
         break;
     } else if (saveFile == "text" || saveFile == "txt") {
           std::filesystem::create_directories(outputDirectory);
-        // Use input file stem to name the report
-        auto outPath = outputDirectory / (filePath.stem().string() + "_report.json");
+        // stem modifies the report name.
+        auto outPath = outputDirectory / (filePath.stem().string() + "_report.txt");
         adapters::fs::write_file(outPath, core::to_text(report));
         std::cout << "Saved report to: " << outPath << "\n";
         break;
@@ -65,10 +64,6 @@ while (true) {
         std::cout << "Invalid input. Please enter 'json' or 'text'.\n";
     }
 }
-
-
-
-
     
 
 }

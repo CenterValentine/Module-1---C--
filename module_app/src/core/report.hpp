@@ -6,7 +6,7 @@
 
 namespace core {
 
-// Plain-text rendering of a Report (human-readable)
+// Text rendering
 inline std::string to_text(const Report& r) {
     std::ostringstream oss;
     oss << "== Line Stats ==\n"
@@ -35,7 +35,7 @@ inline std::string to_text(const Report& r) {
     return oss.str();
 }
 
-// Minimal JSON rendering (no escaping needed for our numeric fields)
+// JSON rendering
 inline std::string to_json(const Report& r) {
     std::ostringstream oss;
     oss << "{"
@@ -62,7 +62,7 @@ inline std::string to_json(const Report& r) {
     return oss.str();
 }
 
-// Stream insertion uses the plain-text representation
+// Stream uses plain-text
 inline std::ostream& operator<<(std::ostream& os, const Report& r) {
     return os << to_text(r);
 }

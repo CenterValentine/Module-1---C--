@@ -2,4 +2,5 @@ Hello world! This is a test file.
 Line two has words words words.
 Line three is short.
 Line 4 is a test line?
+
 Line 5 is here, and to be counted 1 time.
