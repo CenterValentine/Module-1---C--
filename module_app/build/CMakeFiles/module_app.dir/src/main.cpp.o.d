@@ -812,4 +812,6 @@ CMakeFiles/module_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/analyzer.hpp \
+  /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/report.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/adapters/filesystem.hpp

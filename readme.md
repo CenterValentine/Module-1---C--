@@ -19,6 +19,19 @@ I used AI tools to provide articles, tutorials and research explaining basic C++
 I looked at basic C++ project templates and tried to commit this structure to memory by adding it to my deep learning notes.
 
 {Describe the tools that you used to develop the software}
+I relied on *Obsidian* to develop the program architecture. I spent days planning out the application by slowing writing out classes, functions and data structures.  I completed the analyzis and   I sketched out the functions I thought I would use.  I would ask GPT about available functions for a problem to be solved.  
+
+This methodical planned approach was by far the most successful I've ever had writing an application without major time-consuming errors.  Taking the time to plan things out lead to a deeper understanding of the application functionality, functions used and the ability to correct unforseen issues.
+
+I relied heavily on W3's C++ documentation for most of my questions.  When I couldn't find to libary or concept I needed there I escalated to ChatGPT.
+
+Stackoverflow helped me address high level concerns for how to start the application.
+
+CMake was used to modularize the application.
+ChatGPT was carefully used so that questions were asked about C++ principles.  If I had questions about the code, I would ask GPT to help me find a problem
+I had ChatGPT craft C++ flashcards for Obsidian to solidify my understanding of C++ functions.  I also generated flashcards from the conversations I asked ChatGPT.
+
+
 
 
 
@@ -38,6 +51,18 @@ I looked at basic C++ project templates and tried to commit this structure to me
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+- Size limitation protection:
+- Line ending interpretation.
+- Error handling:
+    - Improper delimiters
+    - bytes/hex detection:
+        - Detects for indcations that a file is binary
+    - bytes ≥128
+    - very long lines.
+    - memory cap on vectors (combined with file size restrictions)
+- file type dilimiters (csv, txt, pdf)
+- bytes/hex mode:
+- UTF vs ASCII reporting
+- Top-k analyzis
+- LLM tokenization:
+    - Convert text into tokens or vectorize tokens for LLM use.

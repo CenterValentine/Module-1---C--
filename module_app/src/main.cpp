@@ -2,14 +2,18 @@
 #include <filesystem>
 #include <cctype>
 #include "core/analyzer.hpp"
+#include "core/report.hpp"
 #include "adapters/filesystem.hpp"
 #include <cstring>
+#include <ostream>
+#include <sstream>
 
 
 int main(){
 
 // File input path
     std::filesystem::path inputDirectory = "inputs";
+    std::filesystem::path outputDirectory = "outputs";
 
 //     if (std::filesystem::exists(input)) {
 //     // std::cout << "File exists\n";
@@ -36,9 +40,31 @@ std::cout << "File contents: \n";
 core::Analyzer analyzer;
 
 auto report = analyzer.run(*file);
+std::string saveFile;
 
 
-
+// save file option
+while (true) {
+    std::cout << "Would you like to save this report as json or text? (json/text) ";
+    std::cin >> saveFile;
+    if (saveFile == "json" || saveFile == "JSON") {
+        std::filesystem::create_directories(outputDirectory);
+        // Use input file stem to name the report
+        auto outPath = outputDirectory / (filePath.stem().string() + "_report.txt");
+        adapters::fs::write_file(outPath, core::to_json(report));
+        std::cout << "Saved report to: " << outPath << "\n";
+        break;
+    } else if (saveFile == "text" || saveFile == "txt") {
+          std::filesystem::create_directories(outputDirectory);
+        // Use input file stem to name the report
+        auto outPath = outputDirectory / (filePath.stem().string() + "_report.json");
+        adapters::fs::write_file(outPath, core::to_text(report));
+        std::cout << "Saved report to: " << outPath << "\n";
+        break;
+    } else {
+        std::cout << "Invalid input. Please enter 'json' or 'text'.\n";
+    }
+}
 
 
 

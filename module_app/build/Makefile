@@ -177,6 +177,30 @@ src/core/analyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/analyzer.cpp.s
 .PHONY : src/core/analyzer.cpp.s
 
+src/core/report.o: src/core/report.cpp.o
+.PHONY : src/core/report.o
+
+# target to build an object file
+src/core/report.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/report.cpp.o
+.PHONY : src/core/report.cpp.o
+
+src/core/report.i: src/core/report.cpp.i
+.PHONY : src/core/report.i
+
+# target to preprocess a source file
+src/core/report.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/report.cpp.i
+.PHONY : src/core/report.cpp.i
+
+src/core/report.s: src/core/report.cpp.s
+.PHONY : src/core/report.s
+
+# target to generate assembly for a file
+src/core/report.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/src/core/report.cpp.s
+.PHONY : src/core/report.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/core/analyzer.o"
 	@echo "... src/core/analyzer.i"
 	@echo "... src/core/analyzer.s"
+	@echo "... src/core/report.o"
+	@echo "... src/core/report.i"
+	@echo "... src/core/report.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

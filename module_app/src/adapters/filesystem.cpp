@@ -23,7 +23,6 @@ namespace adapters::fs {
 
 
     void write_file(const std::filesystem::path& path, const std::string& contents){
-
     //  output(filename, open or overwrite) - "outputs a file stream called output, open the file at path for writing, overwrite if needed.”
     std::ofstream output(path, std::ios::out | std::ios::trunc);
 
@@ -35,7 +34,9 @@ namespace adapters::fs {
             throw std::runtime_error(std::string("Cannot open file for writing: ") + path.string());
         }
 
-        output << contents;
+    output << contents;
+    output.flush();
+    if (!output) { throw std::runtime_error(std::string("Write failed: ") + path.string()); }
 
 }
 

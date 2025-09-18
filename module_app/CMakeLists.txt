@@ -10,4 +10,5 @@ add_executable(module_app
     src/main.cpp
     src/adapters/filesystem.cpp
     src/core/analyzer.cpp
+    src/core/report.cpp
 )

@@ -1610,6 +1610,8 @@ CMakeFiles/module_app.dir/src/core/analyzer.cpp.o: /Users/davidvalentine/Documen
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/analyzer.hpp
 
+CMakeFiles/module_app.dir/src/core/report.cpp.o: /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/report.cpp
+
 CMakeFiles/module_app.dir/src/main.cpp.o: /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
@@ -2252,6 +2254,7 @@ CMakeFiles/module_app.dir/src/main.cpp.o: /Users/davidvalentine/Documents/Learni
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -2423,8 +2426,13 @@ CMakeFiles/module_app.dir/src/main.cpp.o: /Users/davidvalentine/Documents/Learni
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/adapters/filesystem.hpp \
-  /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/analyzer.hpp
+  /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/analyzer.hpp \
+  /Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/report.hpp
 
+
+/Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/report.hpp:
+
+/Users/davidvalentine/Documents/Learning/CSE310\ Applied\ Programming/Module\ 1\ -\ C++/module_app/src/core/report.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:
 
@@ -3177,6 +3185,8 @@ CMakeFiles/module_app.dir/src/main.cpp.o: /Users/davidvalentine/Documents/Learni
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_unique_object_representation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/remainder.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
 

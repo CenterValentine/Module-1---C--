@@ -85,12 +85,12 @@ clean: CMakeFiles/module_app.dir/clean
 CMakeFiles/module_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=1,2,3,4 "Built target module_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=1,2,3,4,5 "Built target module_app"
 .PHONY : CMakeFiles/module_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/module_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" 0
 .PHONY : CMakeFiles/module_app.dir/rule
@@ -102,7 +102,7 @@ module_app: CMakeFiles/module_app.dir/rule
 # codegen rule for target.
 CMakeFiles/module_app.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_app.dir/build.make CMakeFiles/module_app.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=1,2,3,4 "Finished codegen for target module_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/davidvalentine/Documents/Learning/CSE310 Applied Programming/Module 1 - C++/module_app/build/CMakeFiles" --progress-num=1,2,3,4,5 "Finished codegen for target module_app"
 .PHONY : CMakeFiles/module_app.dir/codegen
 
 # clean rule for target.
