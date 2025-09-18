@@ -1,26 +1,27 @@
 #include "analyzer.hpp"
 #include <cctype>
+#include <iostream>
 
 namespace core {
 
 void CharacterStats::analyzerCount(std::string_view line) noexcept {
-char_count += line.size();
+characters += line.size();
 for (unsigned char c : line){
 if (std::isalpha(c)) ++letters;
 else if (std::isdigit(c)) ++integers;
 else if (std::isspace(c)) ++spaces;
-else if ( c == ',') ++comma_count;
-else if ( c == '.') ++period_count;
-else if ( c == '!') ++exclamation_count;
-else if ( c == '?') ++question_m_count;
-else ++other_char_count;
+else if ( c == ',') ++commas;
+else if ( c == '.') ++periods;
+else if ( c == '!') ++exclamations;
+else if ( c == '?') ++question_marks;
+else ++other_characters;
 }
  
 }
 
 void LineStats::analyzerCount(std::string_view line) noexcept {
-++line_count;
-if (line.empty()) ++empty_line_count;
+++lines;
+if (line.empty()) ++empty_lines;
 if (line.size() > max_line_length) max_line_length = line.size();
 }
 
@@ -30,7 +31,7 @@ return std::isalnum(c) || c == '\'' || c == '_';
 
 void WordStats::addToken(std::string_view token){
 if (token.empty()) return;
-++word_count;
+++words;
 std::string key;
 key.reserve(token.size());
 for (unsigned char c : token) {key.push_back(std::tolower(c));}
@@ -45,14 +46,13 @@ while (idx < n && !is_alpha(static_cast<unsigned char>(line[idx])))
 {++ idx;} //skips non-words
 std::size_t word_start = idx;
 while (idx < n && is_alpha(static_cast<unsigned char>(line[idx]))) ++idx; //process token
-
 return line.substr(word_start, idx-word_start);
-
-
 }
 
 void Analyzer::analyze_line(std::string_view line, Report& r) noexcept {
+
 r.chars.analyzerCount(line);
+
 r.lines.analyzerCount(line);
 std::size_t i = 0;
 while (i < line.size()){

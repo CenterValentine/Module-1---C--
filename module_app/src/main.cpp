@@ -29,17 +29,19 @@ auto file = adapters::fs::open_file(inputDirectory / filePath);
     
 std::cout << "File contents: \n";
     std::string line;
-    while (std::getline(*file, line)){
-std::cout << line << "\n";
-    }
+//     while (std::getline(*file, line)){
+// std::cout << line << "\n";
+//     }
 
 core::Analyzer analyzer;
 
 auto report = analyzer.run(*file);
 
-std::cout << "Total lines: " << report.lines.line_count << "\n";
-std::cout << "Total words: " << report.words.word_count << "\n";
-std::cout << "Total characters: " << report.chars.char_count << "\n";
+
+
+
+
+
 
     
 
